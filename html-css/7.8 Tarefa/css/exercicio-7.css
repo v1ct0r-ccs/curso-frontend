@@ -1,0 +1,139 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+
+html {
+	font-family: sans-serif;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+
+header h2 {
+	font-weight: 100;
+}
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #ff0;
+	color: #333;
+}
+
+h2 a {
+	vertical-align: middle;
+}
+
+h2 ~ h5 {
+	font-size: 1.3rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+/* Pseudo-elementos */
+
+a {
+	color: #000;
+	text-decoration: none; /* o padrão é underline */
+}
+
+a:hover {
+	color: #ff0;
+	text-decoration: none;
+	background:;
+}
+
+a:visited {
+	color: #BFB378;
+}
+
+a:active {
+	background: #9265BF;
+}
+
+h2:hover {
+	color: #000;
+}
+
+/*
+
+Tipografia
+
+*/
+
+html {
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: 0rem;
+}
+
+li {
+	font-family: sans-serif;
+	letter-spacing: .02rem;
+	line-height: 1.5rem;
+	padding-left: 1rem;
+}
+
+/*
+
+Cores
+
+*/
+
+body {
+	background: url('../imagem/patter.jpg');
+}
+
+section {
+	background: rgba(255, 255, 255, .75);
+}
+
+p {
+	color: #034589 ;
+}
+
+header, footer {
+	background-color: #6B4A8C;
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background: rgba(191, 180, 147, 0.85);
+	padding: 1rem;
+	margin-top: 1rem;
+}
+
+.navegacao li a {
+	color: #000;
+	font-size: 1.4rem;
+}
+
+.navegacao li a:hover  {
+	background-color: rgba(146, 101, 191, .5);
+	color: #FFF;
+}

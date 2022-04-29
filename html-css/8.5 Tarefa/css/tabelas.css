@@ -1,0 +1,134 @@
+
+.tabela {
+	height: 26.5rem;
+}
+
+article div h3 {
+	border: none;
+}
+
+div.table-container {
+	overflow: scroll;
+}
+
+.table-container tr:first-child {
+	font-family: 'Andika New Basic', sans-serif;
+	font-weight: bold;
+}
+
+
+table {
+	background: #F8F8F8;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th {
+	border-right: 1px solid #D9048E;
+}
+
+table tbody tr:nth-child(even) {
+	background-color: #F8F8F8;
+} /* (odd) para linhas pares, (even) para linhas impares */
+
+table tbody tr:hover {
+	background-color: rgba(0, 0, 255, .2);
+}
+
+table th, 
+table td {
+	padding: 1rem;
+	font-size: 1.6rem;
+	text-align: center;
+	height: 3rem;
+	vertical-align: middle;
+	border-bottom: 1px solid #6CCED9;
+}
+
+table tr td:first-child {
+	text-align: center;
+	font-weight: bold;
+}
+
+table th {
+	background-color: #6CCED9;
+	font-weight: bold;
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.table-container h3 {
+	font-size: 1.8rem;
+	text-align: center;
+	padding:0rem;
+	margin: 1rem .5rem;
+}
+
+.table-container tfoot {
+	font-weight: bold;
+	background-color: #F29BD4;
+}
+
+tfoot tr td {
+	border-bottom: 0px;
+}
+
+
+@media (min-width: 1024px) {
+	article {
+		width: 78%;
+	}
+}
+
+@media (max-width: 768px) {
+	tr th {
+		font-size: 1.3rem;
+	}
+
+	tr td {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 523px) {
+	nav.tabela {
+		width: 20%;
+		height: 285px;
+	}
+
+	article.tabela {
+		height: 285px;
+	}
+
+	.table-container h3 {
+		font-size: 1.4rem;
+	}
+}
+
+@media (max-width: 426px) {
+	nav.tabela {
+		width: 23%;
+		height: 274px;
+	}
+
+	.table-container h3 {
+		font-size: 1.3rem;
+		margin: .5rem;
+	}
+
+	article.tabela {
+		width: 73%;
+		height: 274px;
+		margin-left: 1rem;
+	}
+
+	div.table-container {
+		overflow: scroll;
+	}
+}
+
+@media (max-width:360px) {
+	nav.tabela {
+		padding: 1rem 0.2rem;
+	}
+}

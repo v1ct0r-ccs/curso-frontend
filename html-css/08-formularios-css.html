@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device=width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+		<title></title>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Front-end - HTML</h2>
+		</header>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="./05-layouts.html" target="_blank">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Contato</h1>
+				<p>Preencha os campos abaixo</p>
+
+				<form method="post">
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+					<div>
+						<label for="email">E-mail</label>
+						<input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea name=mensagem id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+					</div>
+
+					
+					<div>
+						<p>
+							<label for="questao">Qual línguagem você prefere?</label>
+							<input type="radio" name="questao" value="html">HTML
+							<input type="radio" name="questao" value="ccs">CSS
+							<input type="radio" name="questao" value="javascript">JavaScript
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label for="questao">Quais línguagens você conhece?</label>
+							<input type="checkbox" name="questao" value="html">HTML
+							<input type="checkbox" name="questao" value="ccs">CSS
+							<input type="checkbox" name="questao" value="javascript">JavaScript
+						</p>
+					</div>
+
+					<div>
+						<label>Qual sua cor favorita</label>
+						<select>
+							<option value="vermelho">Vermelho</option>
+							<option value="verde">Verde</option>
+							<option value="azul" selected>Azul</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit">
+					</div>
+
+				</form>
+
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Victor Bruno</p>
+		</footer>
+
+	</body>
+</html>

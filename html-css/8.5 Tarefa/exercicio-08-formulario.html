@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulário Fale Conosco</title>
+
+	<!-- RESET -->
+	<link rel="stylesheet" type="text/css" href="./css/reset-css-clark.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&family=Familjen+Grotesk:ital,wght@1,500&family=Genos:ital,wght@1,500&family=Pattaya&display=swap" rel="stylesheet">
+
+	<!-- Estilos Personalizados -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/formulario.css">
+		
+</head>
+<body>
+	<header>
+		<div id="imagem-vetorial">
+			<img src="./imagem/background-svg.svg" alt="banner-right" style="width: 200px;">
+			<img src="./imagem/background-flip.svg" alt="banner-left" style="width: 200px;">
+		</div>
+		<section>
+			<h1>Curso Front-End - EBAC</h1>
+			<h4>Escola Britânica de Artes Criativas e Tecnologia</h4>
+		</section>
+	</header>
+	<section>
+		<nav id="formulario">
+			<h2>Aulas</h2>
+			<ul>
+				<li><a href="./exercicio-08-home.html">Home</a></li>
+				<li><a href="./exercicio-08-tabela.html">Finanças e Vendas</a></li>
+				<li><a href="./exercicio-08-formulario.html">Formulário</a></li>
+				<li><a href="./exercicio-08-cafe.html">Agenda</a></li>				
+			</ul>
+
+			<h2>Redes Sociais</h2>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/victor-bruno-santos-5ba894236/" target="_blank">Linkedin</a></li>
+				<li><a href="https://www.instagram.com/v1ct0r_ccs/" target="_blank">Instagram</a></li>
+			</ul>
+		</nav>
+		<article>
+
+			<h3>Contato</h3>
+			<p>Preencha os campos abaixo</p>
+
+			<form method="post">
+				<div>
+					<label for="nome">Nome</label>
+					<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+				</div>
+				<div>
+					<label for="email">E-mail</label>
+					<input type="email" name="email" id="email" placeholder="Digite seu E-mail">
+				</div>
+
+				<div>
+					<label for="mensagem">Mensagem</label>
+					<textarea type="message" name=mensagem id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+				</div>
+
+				
+				<div class="alternativa">
+					<p>
+						<label for="questao">Qual línguagem você prefere?</label>
+						<input type="radio" name="questao" value="html">HTML
+						<input type="radio" name="questao" value="ccs">CSS
+						<input type="radio" name="questao" value="javascript">JavaScript
+					</p>
+				</div>
+
+				<div class="alternativa">
+					<p>
+						<label for="questao">Quais línguagens você conhece?</label>
+						<input type="checkbox" name="questao" value="html">HTML
+						<input type="checkbox" name="questao" value="ccs">CSS
+						<input type="checkbox" name="questao" value="javascript">JavaScript
+					</p>
+				</div>
+
+				<div>
+					<label>Qual sua cor favorita</label>
+					<select>
+						<option value="vermelho">Vermelho</option>
+						<option value="verde">Verde</option>
+						<option value="azul" selected>Azul</option>
+					</select>
+				</div>
+
+				<div>
+					<input type="submit">
+				</div>
+
+			</form>
+
+		</article>
+
+	</section>
+
+	<footer>
+		Desenvolvido por Victor Bruno
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* Arquivo CSS com estilos dos elementos de todas as páginas */
+	
+* {
+	box-sizing: border-box;
+}
+
+html {
+	margin: 1rem;
+	padding: 0;
+	font-family: serif;
+	font-size: 62.5%; /* equivalente a 10px */
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h1, h2, h3, p, li {
+	font-family: 'Jost', sans-serif;
+	margin-bottom: 1rem;
+}
+
+a {
+	color: #336;
+	text-decoration: none;
+}
+
+form {
+	background: #eee;
+	padding: 10px;
+}
+
+form div {
+	background: #fff;
+	margin: 1rem 2rem;
+	padding: 2rem 1rem;
+	border-bottom: .1rem solid #33f;
+}
+
+label {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #66f;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+.navegacao {
+	background:white;
+}
+
+ul li {
+	font-size: 1.3rem; /* Equivalente a 16px */
+	height: 2rem; /* equivalente a 2px */
+}
+
+p {
+	margin: 2rem;
+	font-size: 1.3rem; /* equivalente a 16px */
+}
+
+input {
+	padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+	width: 100%;
+	display: block;
+	font-weight: bold;
+	color: #33f;
+}
+
+header {
+	background-color: #222;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+}
+
+nav	{
+	float: left;
+	width: 20%;
+	padding: 20px;
+	margin-top: 2rem;
+}
+
+nav h3 {
+	font-size: 1.8rem;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+
+article {
+	float: left;
+	width: 70%;
+	padding: 20px;
+}
+
+section::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+footer {
+	background-color: #eee;
+	padding: 10px;
+	text-align: center;
+	color: black;
+}
+
+.coluna {
+	display: block;
+	width: 50%;
+	float: left;
+	padding: 5px;
+	background: #eee;
+	border: solid 1px #33f;
+}
+
+.coluna-3 {
+	columns: 150px 3; /*quando chegar na altura de 150px a coluna se dividira em 3*/
+	width: 100%;
+}
+
+.coluna-100w {
+	width: 100%;
+}
+
+/* Mobile First */
+
+/* tablet */
+@media (min-width:769px) {
+	body {
+		background-color: teal;
+		color: #fff;
+	}
+	p, h3, li, a {
+		color: #fff;
+	}
+}
+
+@media (max-width:768px) {
+	nav {
+		width: 30%;
+	}
+	article {
+		width: 70%;
+	}
+	.coluna {
+		width: 50%;
+		min-width: unset;
+	}
+}
+
+/* Smartphone */
+@media (max-width:430px) {
+		nav,
+		article,
+		.coluna {
+			width: 100%;
+			min-width: 320px;
+		}
+}

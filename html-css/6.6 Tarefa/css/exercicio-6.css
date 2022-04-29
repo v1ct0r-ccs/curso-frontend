@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	font-size: 62,5%;
+	background-color: #233;
+	white-space: nowrap;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+header {
+	font-family: 'Rokkitt', serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.6rem;
+	color: white;
+	background-color: #1FF0C9;
+	width: 100%;
+	padding: .4rem;
+	border: solid;
+	border-color: #0F705E;
+	margin-bottom: .4rem;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
+}
+
+nav{
+	text-align: center;
+	width: 100%;
+	padding: .4rem;
+	border-bottom: 0.3rem solid; 
+	background-color: #0F705E;
+	border-color: #1FF0C9;
+	position: sticky;
+	top: 100px;
+	z-index: 1;
+}
+
+ul, li, a {
+	font-family: 'Exo', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	display: inline;
+	list-style: none;
+	text-decoration: none;
+	padding: 2px;
+	margin: 0px 40px;
+}
+
+article {
+	font-family: 'Exo', sans-serif;
+	text-align: center;
+	z-index: 0;
+}
+
+[type="text"], [type="email"], textarea, label {
+	width: 100%;
+	padding: .4rem;
+	margin: .1rem;
+	display: block;
+	font-weight: bold;
+	
+}
+
+h1 {
+	color: white;
+	width: 100%;
+	padding: .4rem;
+	background-color: #1FF0C9;
+	border-bottom: solid;
+	border-color: #0F705E;
+}
+
+p {
+	color: white;
+	width: 100%;
+	padding: .4rem;
+	border-bottom: 0.3 solid;
+	border-color: #1FF0C9;
+}
+
+form div {
+	color: white;
+	width: 100%;
+	padding: .4rem;
+	margin-bottom: .6rem;
+	background-color: #0F705E;
+	border-bottom: solid;
+	border-color: #1FF0C9;
+}
+
+
+footer {
+	text-align: right;
+	margin-top: .4rem;
+	font-family:  "Courier New", monospace;
+	font-size: .8rem;
+}

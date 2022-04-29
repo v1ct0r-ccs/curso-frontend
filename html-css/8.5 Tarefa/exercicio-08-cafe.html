@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Agenda</title>
+
+	<!-- RESET -->
+	<link rel="stylesheet" type="text/css" href="./css/reset-css-clark.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&family=Familjen+Grotesk:ital,wght@1,500&family=Genos:ital,wght@1,500&family=Pattaya&display=swap" rel="stylesheet">
+
+	<!-- Estilos Personalizados -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>
+	<header>
+		<div id="imagem-vetorial">
+			<img src="./imagem/background-svg.svg" alt="banner-right" style="width: 200px;">
+			<img src="./imagem/background-flip.svg" alt="banner-left" style="width: 200px;">
+		</div>
+		<section>
+			<h1>Curso Front-End - EBAC</h1>
+			<h4>Escola Britânica de Artes Criativas e Tecnologia</h4>
+		</section>
+	</header>
+
+	<section>
+		<nav id="menu">
+			<h2>Aulas</h2>
+			<ul>
+				<li><a href="./exercicio-08-home.html">Home</a></li>
+				<li><a href="./exercicio-08-tabela.html">Finanças e Vendas</a></li>
+				<li><a href="./exercicio-08-formulario.html">Formulário</a></li>
+				<li><a href="./exercicio-08-cafe.html">Agenda</a></li>				
+			</ul>
+
+			<h2>Redes Sociais</h2>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/victor-bruno-santos-5ba894236/" target="_blank">Linkedin</a></li>
+				<li><a href="https://www.instagram.com/v1ct0r_ccs/" target="_blank">Instagram</a></li>
+			</ul>
+		</nav>
+
+		<article id="encontro">
+			<h3>Agenda de Encontro</h3>
+			<nav  id="cafe">
+				<img src="./imagem/istockphoto-612x408-cafe.jpg" alt="cafe">
+			</nav>
+			<p id="encontro">Agende um café para conversar sobre o seu projeto, contando mais sobre as ideias e objetivos e também para tirar todas as duvidas possíveis!</p>
+
+			<nav id="agenda">
+				<div class="campo1">
+					<label for="data">Data</label>
+					<input type="date" name="data" min="2022-04-21" max="2022-04-30">
+				</div>
+				<div class="campo2">
+					<label for="hora">Hora</label>
+					<input type="time" name="hora" min="10:00" max="20:00">
+				</div>
+					<input type="submit" id="enviar" name="enviar">
+			</nav>
+		</article>
+	</section>
+
+	<footer id="rodape">
+		Desenvolvido por Victor Bruno
+	</footer>
+</body>
+</html>

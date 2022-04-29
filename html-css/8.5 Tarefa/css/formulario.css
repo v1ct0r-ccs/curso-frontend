@@ -1,0 +1,75 @@
+
+body {
+	overflow-x: hidden;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+
+nav#formulario {
+	position: sticky;
+	z-index: 1;
+	top: 9.8rem;
+}
+
+h3 { text-align: center;
+	font-size: 1.6rem;
+	padding-bottom: 1.1rem;
+	margin: 1rem 2rem 0rem 2rem;
+	border-bottom: solid 2px #6CCED9;
+}
+
+h3 + p {
+	margin: 1rem;
+}
+
+div p {
+	margin: 1rem;
+}
+
+article {
+	text-align: center;
+	height: 68.1rem;
+	z-index: 0;
+}
+
+[type="text"], [type="email"], [type="message"], textarea, label {
+	width: 98%;
+	margin: 1rem;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.alternativa p {
+	text-align: center;
+}
+
+label {
+	font-family: 'Familjen Grotesk', sans-serif;
+	text-align: center;
+}
+
+select, input {
+	margin: .5rem;
+}
+
+form div {
+	color: #000;
+	width: 100%;
+	padding: .4rem;
+	margin-bottom: .6rem;
+	background-color: #6CCED9;
+	border-bottom: solid;
+	border-color: #D9048E;
+}
+
+@media (max-width: 352px) {
+	nav#formulario {
+		z-index: 0;
+		top: auto;
+	}
+}

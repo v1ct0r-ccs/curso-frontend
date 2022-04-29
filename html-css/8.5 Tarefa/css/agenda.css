@@ -1,0 +1,192 @@
+
+#cafe {
+    height: 135px;
+    padding: 0px;
+    margin: 1rem 2rem;
+    border-color: #6CCED9;
+    overflow: hidden;
+    z-index: 0;
+    
+}
+
+#cafe img {
+    width: 200px;
+    height: auto;
+}
+
+p#encontro {
+    font-size: 1.6rem;
+    margin: 2rem;
+    position: relative;
+    top: 5rem;
+}
+
+#agenda {
+    width: 100.42%;
+    height: 30%;
+    margin-top: 4rem;
+    position: relative;
+    right: 2px;
+    padding: 0rem;
+}
+
+#agenda label {
+    text-align: justify;
+}
+
+.campo1, .campo2 {
+    float: left;
+    margin-left: 2rem;
+    position: relative;
+    left: 32%;
+}
+
+input#enviar {
+    position: relative;
+    top: 37px;
+}
+
+#rodape {
+    position: relative;
+    top: 9rem;
+}
+
+@media (max-width: 768px) {
+    #agenda {
+        margin-top: 2rem;
+    }
+    .campo1 {
+        left: 20%;
+    }
+
+    .campo1 label {
+        margin: .5rem;
+    }
+
+    .campo2 {
+        left: 20%;
+    }
+
+    .campo2 label {
+        margin: .5rem;
+    }
+
+    input#enviar {
+        position: relative;
+        top: 27px;
+    }
+}
+
+@media (max-width: 523px) {
+    nav#cafe {
+        width: 200px;
+    }
+
+    p#encontro {
+        font-size: 1.5rem;
+        text-align: left;
+        position: relative;
+        top: 0px;
+    }
+
+    .campo1 {
+        left: 5%;
+    }
+
+    .campo2 {
+        left: 5%;
+    }
+}
+
+@media (max-width: 426px) {
+    nav#cafe {
+        width: 210px;
+        height: 110px;
+        margin: 0rem 2rem;
+        position: relative;
+        left: 2rem;
+    }
+
+    #cafe img {
+        width: 210px;
+        height: auto;
+        position: relative;
+        bottom: 20px;
+    }
+
+    p#encontro {
+        font-size: 1.3rem;
+        text-align: center;
+        top: 20px;
+    }
+
+    .campo1 {
+        left: -5%;
+    }
+    
+    .campo2 {
+        left: -13%;
+    }
+
+    input#enviar {
+        position: relative;
+        top: -32px;
+        left: 35%;
+    }
+}
+
+@media (max-width: 376px) {
+    nav#cafe {
+        margin: 0rem .5rem;
+    }
+
+    p#encontro {
+        top: 10px;
+    }
+
+    .campo1 {
+        left: -7%;
+    }
+    
+    .campo2 {
+        left: -17%;
+    }
+
+    input#enviar {
+        position: relative;
+        top: -32px;
+        left: 35%;
+    }
+}
+
+@media (max-width: 320px) {
+    nav#cafe {
+        width: 245px;
+        height: 120px;
+    }
+
+    article#encontro {
+        height: 240px;
+    }
+
+    #cafe img {
+        width: 245px;
+        height: auto;
+        position: relative;
+        bottom: 30px;
+    }
+
+    .campo1 {
+        left: -5%;
+    }
+    
+    .campo2 {
+        left: -10%;
+    }
+
+    input#enviar {
+        position: relative;
+        top: -32px;
+        left: 35%;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device=width, initial-scale=1">
+		<style type="text/css">
+			{
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: Candara ;
+			}
+
+			header {
+				background-color: #4B0082;
+				width: 97%;
+				padding: 4px;
+				margin: 10px;
+				text-align: center;
+				font-size: 15px;
+				color: white;
+			}
+
+			nav	{
+				float: left;
+				width: 20%;
+				height: 350px;
+				margin: 10px;
+				text-align: left;
+				background-color: #FFB6C1;
+				padding: auto;
+				color: black;
+			}
+
+			nav ul {
+				list-style-type: none;
+				padding: 10px;
+			}
+
+
+			article {
+				float: left;
+				width: 60%;
+				padding: 0px;
+				height: 350px;
+				margin: 10px;
+				text-align: center;
+				background-color: #F0F8FF;
+			}
+
+			img {
+
+				margin: 30px;
+			}
+
+			p {
+				margin: 40px;
+			}
+
+
+			section::after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			footer {
+				background-color: #777;
+				width: 97%;
+				margin: 10px;
+				padding: 4px;
+				text-align: center;
+				color: white;
+			}
+
+			@media (max-width: 600px) {
+				nav, article, footer {
+					width: 100%;
+					height: auto;
+				}
+			}
+
+		</style>
+
+		<title></title>
+	</head>
+		<body>
+			<header>
+				<h1>Curso Front-End - HTML</h1>
+			</header>
+
+			<section>
+
+				<nav>
+					<h3 align="center">Aulas</h3>
+					<ul>
+						<li><a href="./01-introducao.html" target="_blank">Introdução</a></li>
+
+						<li><a href="./02-listas-e-links.html" target="_blank">Listas e Links</a></li>
+
+						<li><a href="./03-formatacao-de-texto.html" target="_blank">Formatação de Texto</a></li>
+
+						<li><a href="./04-tabelas.html" target="_blank">Tabelas</a></li>
+
+						<li><a href="./05-layouts.html" target="_blank">Layouts</a></li>
+
+						<li><a href="./06-formularios.html" target="_blank">Formulários</a></li>
+					</ul>
+
+					<h3 align="center">Redes Sociais</h3>
+					<ul>
+						<li><a href="https://www.linkedin.com/in/victor-bruno-santos-5ba894236/" target="_blank">Linkedin</a></li>
+						<li><a href="https://www.instagram.com/v1ct0r_ccs/" target="_blank">Instagram</a></li>
+						
+					</ul>
+				</nav>
+
+				<article>
+					<img width="120" src="https://media-exp1.licdn.com/dms/image/C5603AQEFrNK4QriDlA/profile-displayphoto-shrink_100_100/0/1648920088886?e=2147483647&v=beta&t=2FuguDTX03Q_zHOeGAgHvXqEj0UkPXRZ42gqo1NyS7w" alt="Victor Bruno"> 
+
+					<p>Olá, me chamo Victor Bruno e sou aluno da <a href="http://ebaconline.com.br" target="_blank"><b>EBAC</b></a>, faço o curso de programação Full Stack Java e com apenas uma semana de curso desenvolvi esta página!</p>
+				</article>
+
+			</section>
+
+			<footer>
+				Desenvolvido por Victor Bruno
+			</footer>
+
+		</body>
+</html>
