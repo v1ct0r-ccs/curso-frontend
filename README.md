@@ -20,7 +20,6 @@ são ramificações / versões paralelas
 - versionamento 0.2.11 (em desenvolvimento)
 - versionamento 1.0.0 (vai para master)
 
-
 git checkout -b dev (criar uma branch nome dev)
 git checkout master (mudar de brach)
 
