@@ -92,10 +92,10 @@ nav li {
     background-color: #efefef;
     margin: 5px 20px 5px 0px;
     padding: 10px;
+    list-style-type: none;
 }
 
 nav a {
-    
     text-decoration: none;
     color: #254159;
 }
@@ -127,4 +127,8 @@ footer p {
 footer small {
     font-size: 80%;
     display: block;
+}
+
+.cog-branding.cog-branding--minimal .cog-branding__powered, .cog-abuse{
+    visibility: hidden !important;
 }
