@@ -64,6 +64,11 @@ p {
     color: #454545;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 ol {
     margin-left: 30px;
 }
@@ -129,6 +134,28 @@ footer small {
     display: block;
 }
 
-.cog-branding.cog-branding--minimal .cog-branding__powered, .cog-abuse{
+.cog-abuse{
     visibility: hidden !important;
+}
+
+.cog-page__navigation {
+    padding-bottom: 2px !important;
+}
+
+h1.cog-heading, .cog-header.cog-wrapper.cog-header--left {
+    background-color: #b8c8d6 !important;
+}
+
+.cognito {
+    height: 375px;
+    overflow: hidden !important;
+}
+
+#tenho-interesse {
+    background-color: #b8c8d6;
+    width: 100%;
+}
+
+#tenho-interesse form, .cog-body {
+    background-color: #b8c8d6 !important;
 }
