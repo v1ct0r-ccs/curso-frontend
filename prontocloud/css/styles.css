@@ -10,15 +10,14 @@ body {
 
 .main-container {
     display: block;
-    width: 100vw;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
 
 }
 
 .container {
     display: block;
     float: left;
-    padding: 20px;
     width: 100%;
     margin: 0 auto;
 }
@@ -27,8 +26,9 @@ header {
     background: #fff;
     display: block;
     float: left;
-    padding: 20px;
     width: 100%;
+    padding: 2rem 0;
+    margin: 2rem 0;
     border-bottom: 1px solid #254159;
 }
 
@@ -84,18 +84,17 @@ section {
     display: block;
     float: left;
     font-size: 1.5rem;
-    padding: 20px;
 }
 
 section nav {
     display: block;
     float: left;
-    width: 30%;
+    width: 25%;
 }
 
 nav li {
     background-color: #efefef;
-    margin: 5px 20px 5px 0px;
+    margin: 5px 10px 5px 0px;
     padding: 10px;
     list-style-type: none;
 }
@@ -111,8 +110,12 @@ nav a:hover {
 
 section article {
     display: block;
-    float: left;
+    float: right;
     width: 70%;
+}
+
+article h1 {
+    margin-top: 2rem;
 }
 
 footer {
@@ -121,7 +124,6 @@ footer {
     display: block;
     float: left;
     width: 100%;
-    padding: 20px;
 }
 
 footer p {
@@ -146,8 +148,13 @@ h1.cog-heading, .cog-header.cog-wrapper.cog-header--left {
     background-color: #b8c8d6 !important;
 }
 
+div.cog-page.cog-wrapper.cog-transition-ltr {
+    position: relative !important;
+    bottom: 100px !important;
+}
+
 .cognito {
-    height: 375px;
+    height: 330px;
     overflow: hidden !important;
 }
 
@@ -158,4 +165,16 @@ h1.cog-heading, .cog-header.cog-wrapper.cog-header--left {
 
 #tenho-interesse form, .cog-body {
     background-color: #b8c8d6 !important;
+}
+
+@media (max-width: 426px) {
+    section nav,
+    section article {
+        width: 95%;
+        margin: 0 2%;
+    }
+
+    .container {
+        padding: 0
+    }
 }
