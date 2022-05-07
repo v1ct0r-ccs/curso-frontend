@@ -169,18 +169,6 @@ div.cog-page.cog-wrapper.cog-transition-ltr {
     background-color: #b8c8d6 !important;
 }
 
-@media (max-width: 426px) {
-    section nav,
-    section article {
-        width: 95%;
-        margin: 0 2%;
-    }
-
-    .container {
-        padding: 0
-    }
-}
-
 #banner {
     background-image: url('../images/banner.png');
     background-repeat: no-repeat;
@@ -267,4 +255,31 @@ dd {
     font-weight: 400;
     margin: .3rem 0 2rem 2rem;
     font-size: 1.6rem;
+}
+
+
+@media (max-width: 426px) {
+    section nav,
+    section article {
+        width: 95%;
+        margin: 0 2%;
+    }
+
+    .container {
+        padding: 0
+    }
+
+    #saiba-mais img,
+    #saiba-mais p {
+        width: 94%;
+        padding: 1rem;
+    }
+}
+
+@media  (max-width: 768px) {
+    #saiba-mais img,
+    #saiba-mais p {
+        width: 45%;
+        padding-left: 1rem;
+    }
 }
