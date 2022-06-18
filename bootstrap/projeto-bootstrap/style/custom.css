@@ -1,0 +1,38 @@
+
+.card {
+    width: 30%;
+    margin-left: 1.5rem;
+    float: left;
+}
+
+#sobre a {
+    margin-bottom: 2rem;
+}
+
+#logo,
+#salao {
+    margin-bottom: 2rem;
+}
+
+#contato {
+    margin-top: 2.5rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    color: #BF0413;
+}
+
+h2, h5 {
+    font-family: 'Poiret One', cursive;
+}
+
+h1,
+#sobre,
+#produto h2 {
+    margin-left: 1.5rem;
+}

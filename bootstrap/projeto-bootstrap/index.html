@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link href="./bootstrap-5.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poiret+One&display=swap" rel="stylesheet">
+   
+    <title>Camden Pizza Co.</title>
+    <link rel="icon" type="image/x-icon" href="./images/pizza.png">
+</head>
+<body>
+
+    <header>
+        <div class="conteiner">
+           <div class="row">
+                <div class="col">
+                    <h1>Canden Pizza Co.</h1>
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produto">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+           </div>
+
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 col-sm-12">
+                    <h2>Sobre nós</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non quae impedit maxime rem mollitia iusto debitis velit neque exercitationem facilis, sunt eos nihil odit obcaecati corporis libero fuga. Explicabo?</p>
+                    <a class="btn btn-lg btn-success">Botão</a>
+                </div>
+                <div id="logo" class="col-md-3 col-sm-6">
+                    <img src="./images/pexels-saifullah-hafeel-1677180.jpg" alt="Logo" class="img-fluid">
+                </div>  
+                <div id="salao" class="col-md-3 col-sm-6">
+                    <img src="./images/pexels-sean-patrick-1801106.jpg" alt="Salão" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Unidade = Largura da área dividido por 12 -->
+    <section id="produto">
+
+        <div class="conteiner">
+            <div class="row">
+                <div class="col">
+
+                    <h2>Produtos</h2>
+
+                    <div class="card">
+                        <img src="./images/pexels-jonathan-borba-2983101.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                             <h4 class="card-title">Hambúrguer</h4>
+                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >Ver produto</a>
+                        </div>
+                     </div>
+                    
+                     <div class="card">
+                        <img src="./images/pexels-piotr-arnoldes-6488933.jpg" alt="" class="img-fluid">
+                        <div class="card-body">
+                             <h4 class="card-title">Pizza</h4>
+                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+                        </div>
+                     </div>
+
+                     <div class="card">
+                        <img src="./images/black_dog_640x427.png" alt="" class="img-fluid">
+                        <div class="card-body">
+                             <h4 class="card-title">Hot Dog</h4>
+                             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                        </div>
+                     </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h2>Contato</h2>
+                    <p>Ficou interessado em alugar o espaço para um evento? Preencha os campos do formulário para receber uma cotação.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <form class="form">
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                        </div>
+
+                        <div class="input-group">
+                            <textarea class="form-control" name="mensagem" rows="5" placeholder="digite sua mensagem"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto 1</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os tamanhos e preços</h6>
+                    <table class="table table-hover"> <!-- "table-hover / table striped" -->
+                        <thead>
+                            <tr>
+                                <th>Combos</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Hambúrguer</td>
+                            <td>R$ 20</td>
+                        </tr>
+                        <tr>
+                            <td>Hambúrguer + Batata</td>
+                            <td>R$ 25</td>
+                        </tr>
+                        <tr>
+                            <td>Hambúrguer + Batata + Bebida</td>
+                            <td>R$ 30</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto 2</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os tamanhos e preços</h6>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Broto</td>
+                            <td>R$ 25</td>
+                        </tr>
+                        <tr>
+                            <td>Media</td>
+                            <td>R$ 30</td>
+                        </tr>
+                        <tr>
+                            <td>Grande</td>
+                            <td>R$ 40</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Produto 3</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os tamanhos e preços</h6>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Tamanho</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Simples</td>
+                            <td>R$ 15</td>
+                        </tr>
+                        <tr>
+                            <td>Duplo</td>
+                            <td>R$ 20</td>
+                        </tr>
+                        <tr>
+                            <td>Completo</td>
+                            <td>R$ 30</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap-5.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
