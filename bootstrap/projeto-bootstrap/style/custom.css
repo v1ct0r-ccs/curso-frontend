@@ -1,21 +1,27 @@
 
+
+body {
+    background-image: url(../images/background-wood-light.jpg);
+}
+
 .card {
     width: 30%;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     float: left;
+    padding: 0;
 }
 
 #sobre a {
     margin-bottom: 2rem;
 }
 
-#logo,
-#salao {
-    margin-bottom: 2rem;
+#carouselExampleFade {
+    left: 4.2rem;
 }
 
 #contato {
     margin-top: 2.5rem;
+    margin-left: -6rem;
 }
 
 .input-group {
@@ -35,4 +41,32 @@ h1,
 #sobre,
 #produto h2 {
     margin-left: 1.5rem;
+}
+
+.background {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 1rem 1rem 0 1rem;
+    text-align: justify;
+}
+
+.background-2 {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem 2.5rem;
+    text-align: justify;
+    margin-right: 3rem;
+}
+
+.carousel-item {
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: #BF0413;
+}
+
+.nav-link:hover {
+    color: #000;
 }

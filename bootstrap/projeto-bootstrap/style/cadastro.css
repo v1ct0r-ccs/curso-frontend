@@ -1,0 +1,52 @@
+
+section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    color: #BF0413;
+}
+
+h2, h5 {
+    font-family: 'Poiret One', cursive;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+
+textarea.form-control {
+    width: 100%;
+    display: block;
+}
+
+#twitch {
+    color: #7B44F2;
+}
+
+.nav-link {
+    color: #BF0413;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+#novidades {
+    margin: 1rem 4rem;
+}
+
+#link a{
+    margin: 0px 7px;
+    position: relative;
+    top: 10px;
+}
