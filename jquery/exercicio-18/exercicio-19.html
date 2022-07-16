@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./vendor/bootstrap-5.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./vendor/owl-min/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/owl/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./vendor/jquery-ui/jquery-ui.min.css">
+    
     <link rel="stylesheet" href="./css/style.css">
-    <title>jQuery</title>
+    <link rel="shortcut icon" href="imagens/icon-dress.png" type="image/x-icon">
+    <title>WebStore</title>
 </head>
 <body>
-
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./imagens/header-logo.png" alt=""></a>
@@ -20,116 +24,129 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="exercicio-18.html">Home
+                        <a class="nav-link" href="exercicio-19.html">Home
                             <span class="sr-only"></span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html" >Produtos</a>
+                        <a class="nav-link" href="#">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="about.html" rel="sobre" >Sobre nós</a>
+                        <a class="nav-link nav-modal-open" href="#sobre" rel="sobre">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="contact.html" rel="contato" >Contato</a>
+                        <a class="nav-link nav-modal-open" href="#contato" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     
-        
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="caption">
+                        <h2>Lorem Ipsum</h2>
+                        <div class="line-dec"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum nulla molestiae cum unde, repellendus atque natus eligendi adipisci veritatis a, iure esse soluta ea eum aliquid rem nostrum sequi aperiam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <div id="featured" class="featured-items">
-      <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-heading">
-                    <div class="line-dec"></div>
-                        <h1>Lista de produtos</h1> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Destaques</h1>
+                    </div>
                 </div>
-            </div>
-           
-            <div class="col-md-12">
-                <div class="owl-carousel olw-theme">
-                   
-                    <div class="featured-item">
-                        <img src="./imagens/pexels-anastasiya-gepp-2065200.jpg" alt="">
-                        <h4>Produto 1</h4>
-                        <h6>R$ 20,00</h6>
-                        <a href="">
-                            Comprar
-                        </a>
-                    </div>
-                    
-
-                   
-                    <div class="featured-item">
-                        <img src="./imagens/pexels-godisable-jacob-965324.jpg" alt="">
-                        <h4>Produto 2</h4>
-                        <h6>R$ 20,00</h6>
-                        <a href="">
-                            Comprar
-                        </a>
-                    </div>
-
-                    
-                    <div class="featured-item">
-                        <img src="./imagens/pexels-evg-kowalievska-1126993.jpg" alt="">
-                        <h4>Produto 3</h4>
-                        <h6>R$ 20,00</h6>
-                        <a href="">
-                                Comprar
-                        </a>
-                    </div>
-
-                    
-                    <div class="featured-item">
-                        <img src="./imagens/pexels-godisable-jacob-794062.jpg" alt="">
-                        <h4>Produto 4</h4>
-                        <h6>R$ 20,00</h6>
-                        <a href="">
-                                Comprar
-                        </a>
-                    </div>
-
-                    
-                    <div class="featured-item">
-                        <img src="./imagens/pexels-shvets-production-6984657.jpg" alt="">
-                        <h4>Produto 5</h4>
-                        <h6>R$ 20,00</h6>
-                        <a href="">
-                            Comprar
-                        </a>
-                    </div>
-
-                    
-                    <div class="featured-item">
-                        <img src="./imagens/pexels-jack-winbow-1457983.jpg" alt="">
-                        <h4>Produto 6</h4>
-                        <h6>R$ 20,00</h6>
-                        <a href="">
-                                Comprar
-                        </a>
-                    </div>
-
-                   
-                    <div class="featured-item">
-                        <img src="./imagens/pexels-godisable-jacob-818992.jpg" alt="">
-                        <h4>Produto 7</h4>
-                        <h6>R$ 20,00</h6>
-                            <a href="">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="featured-item">
+                            <img src="./imagens/pexels-godisable-jacob-794062.jpg" alt="Item 1">
+                            <h4>Produto 1</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
                                 Comprar
                             </a>
-                    </div>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./imagens/pexels-evg-kowalievska-1126993.jpg" alt="Item 2">
+                            <h4>Produto 2</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./imagens/pexels-anastasiya-gepp-2065200.jpg" alt="Item 3">
+                            <h4>Produto 3</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./imagens/pexels-godisable-jacob-965324.jpg" alt="Item 4">
+                            <h4>Produto 4</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./imagens/pexels-jack-winbow-1457983.jpg" alt="Item 5">
+                            <h4>Produto 5</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./imagens/pexels-shvets-production-6984657.jpg" alt="Item 6">
+                            <h4>Produto 6</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./imagens/pexels-godisable-jacob-818992.jpg" alt="Item 7">
+                            <h4>Produto 7</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./imagens/pexels-sherwin-tuibuen-7596198.jpg" alt="Item 8">
+                            <h4>Produto 8</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
+                        <div class="featured-item">
+                            <img src="./imagens/pexels-godisable-jacob-833185.jpg" alt="Item 9">
+                            <h4>Produto 9</h4>
+                            <h6>R$ 20,00</h6>
+                            <a href="single-product.html">
+                                Comprar
+                            </a>
+                        </div>
 
+                        </div>
+                    </div>
                 </div>
             </div>
-
         </div>
-      </div>
     </div>
-
+    
     <div class="subscribe-form">
         <div class="container">
             <div class="row">
@@ -175,10 +192,11 @@
                 <div class="col-md-12">
                     <div class="footer-menu">
                         <ul>
-                            <li><a href="#top">Home</a></li>
-                            <li><a href="#produtos">Produtos</a></li>
-                            <li><a href="#sobre" rel="sobre" class="nav-modal-open">Sobre</a></li>
-                            <li><a href="#contato" rel="contato" class="nav-modal-open">Contato</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Ajuda</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Como Funciona?</a></li>
+                            <li><a href="#">Contate-nos</a></li>
                         </ul>
                     </div>
                 </div>
@@ -187,7 +205,8 @@
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -200,31 +219,27 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright-text">
-                        <p>WebStore &copy; Todos os direitos reservados</p>
+                        <p>WebStore &copy; Todos os direitos reservados
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="modelId">Launch
-    </button>
-
     <!-- Modal -->
     <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Modal title</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">              
+                <div class="modal-body">    
+
                 </div>
             </div>
         </div>
     </div>
-
 
     <div id="contato" class="visually-hidden">
 
@@ -232,7 +247,7 @@
 
             <div class="mb-3">
               <label for="nome" class="form-label">Nome</label>
-              <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+              <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome" required>
               <small id="helpNome" class="text-muted">
                   Digite um nome válido
               </small>
@@ -240,7 +255,7 @@
 
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail" required>
                 <small id="helpEmail" class="text-muted">
                     Digite um e-mail válido
                 </small>
@@ -271,9 +286,9 @@
             </div>
 
             <div class="mb-3">
-                <label for="phone" class="form-label">Celular</label>
-                <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu phone" aria-describedby="helpCelular" required>
-                <small id="helpCelular" class="text-muted">
+                <label for="telefone" class="form-label">Celular</label>
+                <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite seu telefone" aria-describedby="helpTelefone" required>
+                <small id="helpTelefone" class="text-muted">
                     Digite um celular válido
                 </small>
             </div>
@@ -288,11 +303,9 @@
 
             <button type="submit" class="btn btn-primary">Enviar</button>
 
-
         </form>
 
     </div>
-
 
     <div id="sobre" class="visually-hidden">
 
@@ -300,10 +313,14 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur explicabo eos doloribus suscipit impedit nulla voluptates eius ad sint fugiat, atque corrupti, pariatur nobis dignissimos! Ut at tempore recusandae?</p>
 
     </div>
-
-    <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
-    <script src="./vendor/bootstrap-5.1/js/bootstrap.min.js"></script>
-    <script src="./vendor/owl-min/js/owl.carousel.min.js"></script>
-    <script src="./js/custom.js"></script>
-</body>
-</html>
+ 
+        <!-- Biblioteca -->
+        <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/owl/js/owl.carousel.min.js"></script>
+        <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
+        <script src="./vendor/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Script Customizados -->
+        <script src="./js/custom.js"></script>
+    </body>
+    </html>
