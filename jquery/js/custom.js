@@ -124,7 +124,7 @@ $(document).ready(function(){
         $('.modal-body').html($('#'+elem).html())
         $('.modal-header h5.modal-title').html($(this).text())
 
-        let myModal = new bootstrap.Modal($('#modalId'))
+        let myModal = new bootstrap.Modal($('#modal-id'))
 
         myModal.show()
 
@@ -154,6 +154,10 @@ $(document).ready(function(){
   
      $('body').on('blur', '#email', function(){
         validate($(this))
+     })
+
+     $('body').on('focus', '#date', function(){
+         $(this).datepicker()
      })
 
      $('body').on('blur', '#date', function(){

@@ -738,3 +738,19 @@ a {
 	} 
 
 }
+
+::placeholder {
+	color: #fff;
+}
+
+#email {
+	position: relative;
+}
+
+.invalid {
+	border-color: #f00;
+}
+
+.text-muted {
+	display: none;
+}
