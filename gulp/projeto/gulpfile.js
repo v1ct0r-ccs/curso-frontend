@@ -4,6 +4,11 @@ const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const image = require('gulp-image')
+const htmlmin = require('gulp-htmlmin')
+const babel = require('gulp-babel')
+const { parallel } = require('gulp')
+const browserSync = require('browser-sync').create()
+const reload = browserSync.reload
 
 // import gulp from 'gulp'
 // import concat from 'gulp-concat'
@@ -12,25 +17,28 @@ const image = require('gulp-image')
 // import uglify from 'gulp-uglify'
 // import image from 'gulp-image'
 
-function tarefasCSS(cb) {
+function tarefasCSS(callback) {
 
-    return gulp.src([
+    gulp.src([
             './node_modules/bootstrap/dist/css/bootstrap.css',
             './vendor/owl/css/owl.carousel.css0',
             './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
             './vendor/jquery-ui/jquery-ui.css',
             './src/css/style.css'
         ])
-        .pipe(concat('styles.css'))
-        .pipe(cssmin())
-        .pipe(rename({ suffix: '.min'})) // libs.min.css
-        .pipe(gulp.dest('./dist/css'))
+
+        .pipe(concat('styles.css'))         // mescla arqivos
+        .pipe(cssmin())                     // minifica css
+        .pipe(rename({ suffix: '.min'}))    // libs.min.css
+        .pipe(gulp.dest('./dist/css'))      // cria arquivo em novo diretório
+
+    return callback()
 
 }
 
-function tarefasJS(){
+function tarefasJS(callback){
 
-    return gulp.src([
+    gulp.src([
             './node_modules/bootstrap/dist/js/bootstrap.js',
             './node_modules/jquery/dist/jquery.js',
             './vendor/jquery-mask/jquery.mask.js',
@@ -38,10 +46,16 @@ function tarefasJS(){
             './vendor/owl/js/owl.carousel.js',
             './src/js/custom.js'
         ])
+        .pipe(babel({
+            comments: false,
+            preset: ['@babel/env']
+        }))
         .pipe(concat('scripts.js'))
         .pipe(uglify())
         .pipe(rename({ suffix: '.min'})) // libs.min.js
         .pipe(gulp.dest('./dist/js'))
+
+    return callback()
 
 }
 
@@ -62,6 +76,37 @@ function tarefasImagem(){
         .pipe(gulp.dest('./dist/images'))
 }
 
+// POC - Proof of COncept
+function tarefasHTML(callback){
+
+    gulp.src('../src/**/*.html')
+        .pipe(htmlmin({ collapseWhiteespase: true }))
+        .pipe(gulp.dest('./dist'))
+
+    return callback()
+}
+
+gulp.task('serve', function(){
+
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    })
+    gulp.watch('./src/**/*').on('change', process)  // repete o processo quando alterar algo em src
+    gulp.watch('./dist/**/*').on('change', reload)
+})
+
+function end(cb){
+    console.log("tarefas concluídas")
+    return cb()
+}
+
+// series x parallel
+const process = series( tarefasHTML, tarefasJS, tarefasCSS, end)
+
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
+
+exports.default = process
