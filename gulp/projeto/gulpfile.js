@@ -8,6 +8,7 @@ const htmlmin = require('gulp-htmlmin')
 const babel = require('gulp-babel')
 const { parallel } = require('gulp')
 const browserSync = require('browser-sync').create()
+const sass = require('gulp-sass')(require('node-sass'))
 const reload = browserSync.reload
 
 // import gulp from 'gulp'
@@ -24,15 +25,24 @@ function tarefasCSS(callback) {
             './vendor/owl/css/owl.carousel.css0',
             './node_modules/@fortawesome/fontawesome-free/css/fontawesome.css',
             './vendor/jquery-ui/jquery-ui.css',
-            './src/css/style.css'
         ])
 
-        .pipe(concat('styles.css'))         // mescla arqivos
+        .pipe(concat('libs.css'))         // mescla arqivos
         .pipe(cssmin())                     // minifica css
         .pipe(rename({ suffix: '.min'}))    // libs.min.css
         .pipe(gulp.dest('./dist/css'))      // cria arquivo em novo diretório
 
     return callback()
+
+}
+
+function tarefasSASS(callback) {
+
+    gulp.src('./src/scss/**/*.scss')
+        .pipe(sass()) // transforma o sass para css
+        .pipe(gulp.dest('./dist/css'))
+
+    cb()
 
 }
 
@@ -103,10 +113,11 @@ function end(cb){
 }
 
 // series x parallel
-const process = series( tarefasHTML, tarefasJS, tarefasCSS, end)
+const process = series( tarefasHTML, tarefasJS, tarefasCSS, tarefasSASS, end)
 
 exports.styles = tarefasCSS
 exports.scripts = tarefasJS
 exports.images = tarefasImagem
+exports.sass = tarefasSASS
 
 exports.default = process
