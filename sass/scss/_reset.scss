@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 * {
     border: 0;
     margin: 0;
@@ -13,10 +15,13 @@ p {
     display: block;
 }
 
+article
 header,
 section,
 footer {
+    color: $color-04;
     display: block;
+    float: left;
     margin: 0 auto;
     width: 100%;
     padding: 4rem 0;
@@ -28,7 +33,11 @@ section {
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: math.div(1200, 1200) * 100%;
+
+    @media (max-width: 1999px){
+        max-width: math.div(1000, 1200) * 100%;
+    }
 }
 
 img {
@@ -53,7 +62,7 @@ h1 {
     color: $color-01;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: $font-big;
-    margin-top: $mt;
+    margin-top: $mt-02;
 }
 
 h2 {
@@ -68,7 +77,8 @@ h3 {
 
 header,
 footer {
-    background-color: $bg-color
+    background-color: $bg-color;
+    p {
+        color: $color-02;
+    }
 }
-$mt-02: 3rem;
-$space-default: 1.5rem;

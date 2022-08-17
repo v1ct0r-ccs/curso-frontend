@@ -1,17 +1,30 @@
+/*
+@import 'vars';
+@import 'reset';
+@import 'blocks';
+@import 'cars';
+@import 'destack';
+*/
+
 $align: left;
-$bg-color: rgb(77, 230, 222);
-$color-01: #fff;
+$bg-color: #ddd;
+$color-01: #ff5;
 $color-02: #999;
 $color-03: #f00;
 $color-04: #222;
 $color-default: #444;
-$font-big: 3rem; 
+$font-big: 3.5rem; 
 $font-family-default: Arial, Helvetica, sans-serif;
-$font-medium: 2.2rem;
+$font-medium: 2.5rem;
 $font-normal: 1.5rem;
 $font-small: 1.2rem;
 $mb: 1.5rem;
 $mt: 1.5rem;
+$mt-02: 3rem;
+$space-default: 1.5rem;
+$tablet: 999px;
+
+@use 'sass:math';
 
 * {
     border: 0;
@@ -28,10 +41,13 @@ p {
     display: block;
 }
 
+article
 header,
 section,
 footer {
+    color: $color-04;
     display: block;
+    float: left;
     margin: 0 auto;
     width: 100%;
     padding: 4rem 0;
@@ -43,7 +59,11 @@ section {
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: math.div(1200, 1200) * 100%;
+
+    @media (max-width: 1999px){
+        max-width: math.div(1000, 1200) * 100%;
+    }
 }
 
 img {
@@ -68,7 +88,7 @@ h1 {
     color: $color-01;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: $font-big;
-    margin-top: $mt;
+    margin-top: $mt-02;
 }
 
 h2 {
@@ -83,91 +103,127 @@ h3 {
 
 header,
 footer {
-    background-color: $bg-color
+    background-color: $bg-color;
+    p {
+        color: $color-02;
+    }
 }
-$mt-02: 3rem;
-$space-default: 1.5rem;
 
 .blocks {
 
     padding: 3rem 0;
 
-    h2 {
+    &__title {
         color: $color-01;
     }
 
-    ul {
+    &__list {
         list-style-type: none;
         font-size: $font-small;
         display: flex;
-        justify-content: space-between;
-        height: 250px;
+        float: left;
+        height: auto;
+        margin: $space-default auto;
         padding: 1rem 0;
         width: 100%;
     }
 
-    li {
+    &__item {
         color: $color-02;
         display: block;
-        margin: $space-default auto;
-        width: 30%;
+        margin: $space-default .75rem;
+        text-align: center;
+        width: calc(99% / 3 - 15px);
         
-        .img-container {
-            display: block;
-            height: 200px;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        a {
-            background-color: $color-01;
-            border-radius: 5px;
-            color: white;
-            display: block;
-            font-size: $font-medium;
-            margin: $mt-02 auto $mb;
-            padding: 4px 8px;
-            text-align: center;
-            text-decoration: none;
+        @media (max-width: $tablet) {
+            width: calc(99% - 30px);
         }
     }
 
+    &__img-container {
+        display: block;
+        height: 15rem;
+        overflow: hidden;
+        width: 100%;
+        @media (max-width: $tablet) {
+            height: 20rem;
+        }
+    }
+
+    &__description {
+        color: $color-default;
+        font-size: $font-normal;
+        padding: $font-family-default;
+
+        &--destack{
+            color: $color-02;
+        }
+    }
+
+    &__button {
+                background-color: $color-01;
+                border-radius: 5px;
+                color: white;
+                display: inline-block;
+                font-size: $font-medium;
+                margin: $mt-02 auto $mb;
+                padding: .5rem 3rem;
+                text-align: center;
+                text-decoration: none;
+            }
 }
 
+@mixin theme($theme: $color-01, $bg: $color-04){
+    background-color: $bg;
+    border: 1px solid $theme;
+    box-shadow: 0 0 1px rgba($color-default, $alpha: .25);
+}
 .cars {
-    h2 {
+    &__title {
         color: $color-02;
     }
-    li {
-        color: $color-04;
 
-        a {
+    &__item {
+        @include theme($theme: #ccc, $bg: #fff);
+        color: $color-02;
+        display: flex;
+        float: left;
+        height: max-content;
+        justify-content: center;
+        align-items: baseline;
+        flex-flow: column;
+
+        &--destacks {
+            @include theme;
+        }  
+    }
+
+    &__button {
             background-color: $color-default;
         }
-    }
 }
 
 .destack {
     background-color: $color-04;
     padding: $space-default;
-    h1 {
+    &__title {
         color: $color-03;
         float: left;
         font-size: $font-big;
         margin-top: 0;
     }
-    h2 {
+    &__subtitle {
         float: left;
         font-size: $font-small;
         margin-left: $space-default;
         margin-top: $mt;
     }
-    img {
+    &__image {
         width: 100%;
         height: auto;
         margin: $space-default auto;
     }
-    p {
+    &__description {
         font-size: $font-normal;
         color: $color-01;
         padding: 2rem 0;

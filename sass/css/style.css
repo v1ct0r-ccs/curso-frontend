@@ -1,3 +1,10 @@
+/*
+@import 'vars';
+@import 'reset';
+@import 'blocks';
+@import 'cars';
+@import 'destack';
+*/
 * {
   border: 0;
   margin: 0;
@@ -13,10 +20,12 @@ p {
   display: block;
 }
 
-header,
+article header,
 section,
 footer {
+  color: #222;
   display: block;
+  float: left;
   margin: 0 auto;
   width: 100%;
   padding: 4rem 0;
@@ -28,7 +37,12 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 100%;
+}
+@media (max-width: 1999px) {
+  .container {
+    max-width: 83.3333333333%;
+  }
 }
 
 img {
@@ -43,22 +57,22 @@ body {
 }
 
 p {
-  color: #fff;
+  color: #ff5;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: left;
 }
 
 h1 {
-  color: #fff;
+  color: #ff5;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 3rem;
-  margin-top: 1.5rem;
+  font-size: 3.5rem;
+  margin-top: 3rem;
 }
 
 h2 {
   color: #999;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
 }
 
 h3 {
@@ -68,55 +82,93 @@ h3 {
 
 header,
 footer {
-  background-color: rgb(77, 230, 222);
+  background-color: #ddd;
+}
+header p,
+footer p {
+  color: #999;
 }
 
 .blocks {
   padding: 3rem 0;
 }
-.blocks h2 {
-  color: #fff;
+.blocks__title {
+  color: #ff5;
 }
-.blocks ul {
+.blocks__list {
   list-style-type: none;
   font-size: 1.2rem;
   display: flex;
-  justify-content: space-between;
-  height: 250px;
+  float: left;
+  height: auto;
+  margin: 1.5rem auto;
   padding: 1rem 0;
   width: 100%;
 }
-.blocks li {
+.blocks__item {
   color: #999;
   display: block;
-  margin: 1.5rem auto;
-  width: 30%;
+  margin: 1.5rem 0.75rem;
+  text-align: center;
+  width: calc(33% - 15px);
 }
-.blocks li .img-container {
+@media (max-width: 999px) {
+  .blocks__item {
+    width: calc(99% - 30px);
+  }
+}
+.blocks__img-container {
   display: block;
-  height: 200px;
+  height: 15rem;
   overflow: hidden;
   width: 100%;
 }
-.blocks li a {
-  background-color: #fff;
+@media (max-width: 999px) {
+  .blocks__img-container {
+    height: 20rem;
+  }
+}
+.blocks__description {
+  color: #444;
+  font-size: 1.5rem;
+  padding: Arial, Helvetica, sans-serif;
+}
+.blocks__description--destack {
+  color: #999;
+}
+.blocks__button {
+  background-color: #ff5;
   border-radius: 5px;
   color: white;
-  display: block;
-  font-size: 2.2rem;
+  display: inline-block;
+  font-size: 2.5rem;
   margin: 3rem auto 1.5rem;
-  padding: 4px 8px;
+  padding: 0.5rem 3rem;
   text-align: center;
   text-decoration: none;
 }
 
-.cars h2 {
+.cars__title {
   color: #999;
 }
-.cars li {
-  color: #222;
+.cars__item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 1px rgba(68, 68, 68, 0.25);
+  color: #999;
+  display: flex;
+  float: left;
+  height: max-content;
+  justify-content: center;
+  align-items: baseline;
+  flex-flow: column;
 }
-.cars li a {
+.cars__item--destacks {
+  background-color: #222;
+  border: 1px solid #ff5;
+  box-shadow: 0 0 1px rgba(68, 68, 68, 0.25);
+}
+.cars__button {
   background-color: #444;
 }
 
@@ -124,26 +176,26 @@ footer {
   background-color: #222;
   padding: 1.5rem;
 }
-.destack h1 {
+.destack__title {
   color: #f00;
   float: left;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-top: 0;
 }
-.destack h2 {
+.destack__subtitle {
   float: left;
   font-size: 1.2rem;
   margin-left: 1.5rem;
   margin-top: 1.5rem;
 }
-.destack img {
+.destack__image {
   width: 100%;
   height: auto;
   margin: 1.5rem auto;
 }
-.destack p {
+.destack__description {
   font-size: 1.5rem;
-  color: #fff;
+  color: #ff5;
   padding: 2rem 0;
   width: 100%;
 }
