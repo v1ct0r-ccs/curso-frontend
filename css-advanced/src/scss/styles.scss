@@ -1,0 +1,77 @@
+$color-font: #33d;
+$color-bg-default: #a9f;
+$color-bg-boxes: #FD3;
+$color-primary: #195484;
+$color-secondary: #f58220;
+$font-color-primary: #FFF;
+$font-color-secondary: #454545;
+$font-default: Arial, Helvetica, sans-serif;
+$font-size-default: 1.6rem;
+$font-size-nav: 1.8rem;
+
+@import 'animations';
+@import 'fonts';
+@import 'footer';
+@import 'header';
+@import 'nav';
+@import 'produtos';
+@import 'sobre';
+@import 'steps';
+@import 'vitrine';
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-bg-default;
+    font-family: $font-default;
+    margin: 0;
+}
+
+h1 {
+    color: $color-font;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+article {
+
+    h1 {
+        color: $color-secondary;
+        font-size: 3rem;
+        text-align: left;
+    }
+}
+
+h2 {
+    color: $font-color-primary;
+    font-family: 'air_americana', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 4rem;
+    text-shadow: 1px 2px 8px white;
+}
+
+#root,
+header,
+section,
+footer {
+    display: block;
+    float: left;
+    width: 100%;
+
+}
+
+section {
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    max-width: 90vw;
+}

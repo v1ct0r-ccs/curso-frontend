@@ -1,6 +1,6 @@
 .vitrine {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 
     &__item {
@@ -22,6 +22,7 @@
     }
 
     &__button {
+        box-shadow: 1px 2px 8px 2px rgba(51,51,221,.5);
         background-color: $color-font;
         border-radius: 1rem;
         border: 1px solid $color-bg-default;
@@ -32,6 +33,9 @@
         text-decoration: none;
         align-self: center;
         margin-bottom: 1rem;
+        &:hover {
+            box-shadow: 1px 2px 4px 2px rgba(25, 54, 245, 0.75);
+        }
     }
 
 }

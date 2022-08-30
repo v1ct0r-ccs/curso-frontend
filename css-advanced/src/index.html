@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Framework Simulator</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <title>Lance Negócios</title>
 </head>
 <body>
     <div id="root">
         <header>
             <div class="container">
-                <h2>Logo</h2>
-                <nav>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#produtos">Produtos</a>
-                    <a href="#contato">Contato</a>
+                <h2 class="logo">
+                    <img src='./assets/images/logo-lance.png' alt="logo">
+                </h2>
+                <nav class="nav">
+                    <a class="nav__item" href="#sobre">Sobre</a>
+                    <a class="nav__item" href="#produtos">Produtos</a>
+                    <a class="nav__item" href="#contato">Como funciona</a>
                 </nav>
+                <div class="hero">
+                    <h1>Veja como acelerar a criação do seu negócio</h1>
+                </div>
             </div> 
 
         </header>
         <section id="sobre">
             <div class="container">
-                <aside>
-                    <div id="localizacao"></div>
-                </aside>
                 <article>
                     <h1>Sobre nós</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius rem dolorem eum repellat, pariatur iure! Sit, facere. Maiores, fuga eum perferendis minima sint harum molestiae repellendus sunt, numquam, iusto quas.</p>
@@ -34,66 +37,90 @@
 
         <section id="produtos">
             <div class="container">
-                <h1>Catálogo</h1>
-                <div class="vitrine">
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 1</h3>
-                        <img src="#" alt="" class="vitrine__image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
+                <article>
+                    <h1>Catálogo</h1>
+                    <div class="vitrine">
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-logo.png" alt="Criação de logo">
+                            </div>
+                            <h3 class="vitrine__title">Logo</h3>
+                            <p class="vitrine__desc">
+                                Design profissional de logos para você começar
+                            </p>
+                            <a href="#produto-logo" class="vitrine__button">Tenho interresse</a>
+                        </div>
 
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 2</h3>
-                        <img src="#" alt="" class="vitrine__image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-timbrado.png" alt="Papel Timbrado">
+                            </div>
+                            <h3 class="vitrine__title">Papel Timbrado</h3>
+                            <p class="vitrine__desc">
+                                Aplicação de identidade visual a seus documentos do dia a dia
+                            </p>
+                            <a href="#produto-timbrado" class="vitrine__button">Tenho interresse</a>
+                        </div>
 
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 3</h3>
-                        <img src="#" alt="" class="vitrine__image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-cartao.png" alt="Cartão de visitas">
+                            </div>
+                            <h3 class="vitrine__title">Cartão de visitas</h3>
+                            <p class="vitrine__desc">
+                                Layout do seu cartão de visitas com aquele toque profissional
+                            </p>
+                            <a href="#produto-cartao" class="vitrine__button">Tenho interresse</a>
+                        </div>
 
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 4</h3>
-                        <img src="#" alt="" class="vitrine__image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
+                        <div class="vitrine__item">
+                            <div class="vitrine__image">
+                                <img src="./assets/images/produto-site.png" alt="Site institucional">
+                            </div>
+                            <h3 class="vitrine__title">Site institucional</h3>
+                            <p class="vitrine__desc">
+                                Desenvolvimento de site com a sua identidade visual aplicada.
+                            </p>
+                            <a href="#produto-site" class="vitrine__button">Tenho interresse</a>
+                        </div>
                     </div>
-
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 5</h3>
-                        <img src="#" alt="" class="vitrine__image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-
-                    <div class="vitrine__item">
-                        <h3 class="vitrine__produto">Produto 6</h3>
-                        <img src="#" alt="" class="vitrine__image">
-                        <p class="vitrine__desc"></p>
-                        <a href="" class="vitrine__button">Ver detalhes</a>
-                    </div>
-                </div>
+                </article>
             </div>
         </section>
 
-        <section id="contato">
+        <section id="como-funciona">
             <div class="container">
-                <h1>Contato</h1>
-                <form class="contato">
-                    <input type="text" placeholder="Nome" class="contato__input">
-                    <input type="text" placeholder="Email" class="contato__input">
-                    <button class="contato__button">Enviar</button>
-                </form>
+                <article>
+                    <h1>Como funciona</h1>
+                    <div class="steps">
+                        <div class="steps__item">
+                            <img src="./assets/images/escolha.png" alt="Escolha seu lance">
+                            <h3>Escolha seu lance</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/lance.png" alt="Pague o item escolhido">
+                            <h3>Lance seu pagamento</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/trabalhamos.png" alt="Trabalhamos">
+                            <h3>Após a confirmação do pagamento, iniciamos os trabalhos.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/voce-aprova.png" alt="Você aprova">
+                            <h3>Em poucos dias você recebará o trabalho pronto para avaliar.</h3>
+                        </div>
+                        <div class="steps__item">
+                            <img src="./assets/images/lancamos.png" alt="Lance seu negócio">
+                            <h3>Se estiver tudo ok para você, você lança seu negócio <span>=)</span></h3>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
         <footer>
             <div class="container">
-                <p>Loja X &copy; Todos os direitos reservados. <br><small>Desenvolvido por Victor Bruno</small></p>
+                <p>Lance Negócios &copy; Todos os direitos reservados. <br>
+                <small>Desenvolvido por <a href="https://github.com/v1ct0r-ccs">Victor Bruno</a>.</small></p>
             </div>
         </footer>
     </div>

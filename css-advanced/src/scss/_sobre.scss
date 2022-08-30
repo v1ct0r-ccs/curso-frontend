@@ -1,0 +1,18 @@
+
+#sobre {
+    background-color: none;
+
+    article {
+        
+        h1 {
+            color: $color-secondary;
+            font-size: 3rem;
+            text-align: center;
+
+        }
+        p {
+            font-size: $font-size-default;
+            color: $font-color-primary
+        }
+    }
+}
