@@ -1,6 +1,3 @@
-$color-font: #33d;
-$color-bg-default: #a9f;
-$color-bg-boxes: #FD3;
 $color-primary: #195484;
 $color-secondary: #f58220;
 $font-color-primary: #FFF;
@@ -9,15 +6,24 @@ $font-default: Arial, Helvetica, sans-serif;
 $font-size-default: 1.6rem;
 $font-size-nav: 1.8rem;
 
-@import 'animations';
+$color-font: #33d;
+$color-bg-default: #a9f;
+$color-bg-boxes: #FD3;
+
 @import 'fonts';
-@import 'footer';
-@import 'header';
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
 @import 'nav';
-@import 'produtos';
-@import 'sobre';
-@import 'steps';
-@import 'vitrine';
+@import 'grid';
+
+@viewport {
+    width: device-width;
+    zoom: 1;
+}
+
+* {
+    box-sizing: border-box; 
+    //considera o padding e border como parte do cáuculo total da largura e altura
+}
 
 html {
     font-size: 62.5%;
@@ -25,13 +31,14 @@ html {
 }
 
 body {
-    background-color: $color-bg-default;
+    background-color: $color-primary;
     font-family: $font-default;
     margin: 0;
+    font-size: 1.4rem;
 }
 
 h1 {
-    color: $color-font;
+    color: $font-color-primary;
     text-align: center;
     margin-top: 4rem;
 }
@@ -69,9 +76,32 @@ section {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+//SASS
 .container {
     display: flex;
     flex-flow: column;
     margin: 0 auto;
     max-width: 90vw;
+
+    @media (max-width: 768px){
+        max-width: 99%;
+    }
+
+    @media (min-width: 1024){
+        background-color: #33d;
+    }
 }
+
+@import 'animations';
+@import 'footer';
+@import 'header';
+@import 'produtos';
+@import 'sobre';
+@import 'steps';
+@import 'vitrine';
+@import 'responsive';
