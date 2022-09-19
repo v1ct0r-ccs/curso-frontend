@@ -1,3 +1,5 @@
+"use strict"
+
 /* function Pessoa () {
 
         const pessoa = this
@@ -18,7 +20,7 @@ function Pessoa() {
         this.idade = 0
     
     setInterval(() => {
-       console.log(this.idade++) 
+       console.log(this.idade++)
     }, 2000);
 
 }

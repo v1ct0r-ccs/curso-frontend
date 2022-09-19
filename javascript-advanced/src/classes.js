@@ -1,3 +1,5 @@
+import { Animais } from "./modulesExport"
+
 class Animal {
 
     constructor(especie){
@@ -23,8 +25,4 @@ class Cachorro extends Animal{
     }
 }
 
-const cachorro = new Animal('cachorro')
-cachorro.falar()
-cachorro.comer()
-cachorro.dormir()
-
+export default Cachorro

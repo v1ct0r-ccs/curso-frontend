@@ -24,7 +24,7 @@
 - Único parâmetro: p1 => { expressao }
 
 ## Manipulação de Dados
-- JavaScript trabalha com tipagem dinâmica (números, texto, strings, objetos, arrays) let x = 0 x = 'a'
+- JavaScript trabalha com tipagem dinâmica (números, texto, strings, objetos, arrays) `let x = 0` `x = 'a'`
 
 ## Arrays
 - Filter
