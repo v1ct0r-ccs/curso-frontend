@@ -1,0 +1,68 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#posts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    gap: 4rem;
+    font-size: 1.5rem;
+}
+
+.posts-item {
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 15px 50px;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+    margin: 0;
+    background-color: rgb(208, 231, 231);;
+    border-radius: 15px 50px 0 0;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 2rem 1rem;
+    margin: 0;
+    background-color: azure;
+    border-radius: 0 0 15px 50px;
+}
+
+form {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    padding-left: 2rem;
+    gap: 3rem;
+}
+
+#main {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0 0 4rem 1.5rem;
+}
