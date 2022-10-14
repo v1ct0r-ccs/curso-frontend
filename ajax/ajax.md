@@ -9,9 +9,27 @@ Asynchronous JavaScript and XML
 
 - importante por trabalhar atualização da página sob demanda, de modo assíncrono
 - requisições assíncronas trabalham de modo não cronológico, varia de acordo com o tempo de resposta do servidor, quantidade de informações...
-- pode ser implementada pelo JQuery ou Fecth API do JavaScript
+- pode ser implementada pelo [JQuery] (https://api.jquery.com/jquay.ajax/) ou [Fecth API do JavaScript] (https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch)
 
-# APIs
+## APIs
+Aplication Program Interface
+- [GitHub > Users] (https://docs.github.com/en/rest/reference/users)
+- [Json Placeholder > Posts] (https://jsonplaceholder.typicode.com/posts)
 
-- GitHub > Users
-- Json Placeholder > Posts
+## Rest
+Criado por Roy Fielding, um dos criadores do HTTP
+- Serve para estabelecer padrões de comunicação entre back-end e front ent
+- Header: cabeçalho de requisições
+- Path: caminho ou rota para back-end
+- URL: apix.google.com, api.amazon.com 
+- Interoperar dados, informações e serviços [Swagger] (https://petstore.swagger.io) [vtex] (https://developers.vtex.com/vtex-rest-api/docs)
+- Get
+- Post
+- Put
+- Delete 
+
+## Validação de Fomulários
+- Garantir o preenchimento correto de capos
+- Validar dados, documentos, números importantes (CPF, CEP, Telefone, Número de Cartão, ...)
+- Prevnção de vulnerabilidades como SQL Injection
+- Tarefa do front-end, que podem ser processadas pelo back-end
