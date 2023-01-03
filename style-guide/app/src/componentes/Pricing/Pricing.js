@@ -33,7 +33,7 @@ const tiers = [
     title: 'Free',
     price: '0',
     description: [
-      '10 users included',
+      '3 users included',
       '2 GB of storage',
       'Help center access',
       'Email support',
@@ -106,7 +106,7 @@ function PricingContent() {
       >
         <Toolbar sx={{ flexWrap: 'wrap' }}>
           <Typography variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-            Company Name
+            Mais uma Empresa de Nuvem
           </Typography>
           <nav>
             <Link
